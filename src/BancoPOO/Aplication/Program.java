@@ -2,24 +2,28 @@ package BancoPOO.Aplication;
 import java.util.Scanner;
 import java.util.Locale;
 
+
 public class Program {
     public static void main(String[] args) {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
-        double xA,xB,xC,yA,yB,yC;
+        Triangle x,y ;
+        Triangle x = new Triangle()
+        Triangle y = new Triangle()
+
         System.out.println("Digite o valor do X: ");
-        xA = sc.nextDouble();
-        xB = sc.nextDouble();
-        xC = sc.nextDouble();
+        x.a = sc.nextDouble();
+        x.b = sc.nextDouble();
+        x.c = sc.nextDouble();
         System.out.println("Digite o valor do Y: ");
-        yA = sc.nextDouble();
-        yB = sc.nextDouble();
-        yC = sc.nextDouble();
+        y.a = sc.nextDouble();
+        y.b = sc.nextDouble();
+        y.b = sc.nextDouble();
         //calcula area de X e Y
-        double p = (xA + xB + xC)/2;
-        double areaX =Math.sqrt( p*(p-xB)*(p-xC));
-        p = (yA + yB + yC)/2;
-        double areaY =Math.sqrt( p*(p-yB)*(p-yC));
+        double p = (x.a + x.b + x.c)/2;
+        double areaX =Math.sqrt( p*(p-x.a)*(p-x.b)*(p-x.c));
+        p = (y.a + y.b + y.c)/2;
+        double areaY =Math.sqrt( p*(p-y.a)*(p-y.b)*(p-y.c));
 
         System.out.println("Área do triângulo X: " + String.format("%.2f", areaX));
         System.out.println("Área do triângulo Y: " + String.format("%.2f", areaY));

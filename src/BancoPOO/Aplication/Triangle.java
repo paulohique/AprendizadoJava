@@ -1,8 +1,7 @@
 package BancoPOO.Aplication;
 
 public class Triangle {
-    public static void main(String[] args) {
-
-
-    }
+    public double a;
+    public double b;
+    public double c;
 }
