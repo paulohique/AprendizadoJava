@@ -4,11 +4,11 @@ import java.util.ArrayList;
 
 public class Banco {
     private ArrayList<Conta> contas;
-
+// Construtor
     public Banco() {
         contas = new ArrayList<>();
     }
-
+// Metodos
     public void adicionarConta(Conta conta) {
         contas.add(conta);
         System.out.println("Conta adicionada com sucesso!");
