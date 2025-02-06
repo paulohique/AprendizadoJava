@@ -1,4 +1,4 @@
-package BancoPOO.Aplication;
+package Aplication;
 
 public class Triangle {
     public double a;

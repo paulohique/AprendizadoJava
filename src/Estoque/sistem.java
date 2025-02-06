@@ -1,4 +1,4 @@
-package BancoPOO.Estoque;
+package Estoque;
 import java.util.Scanner;
 import java.util.Locale;
 public class sistem {

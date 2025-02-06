@@ -1,4 +1,4 @@
-package BancoPOO.Aplication;
+package Aplication;
 import java.util.Scanner;
 import java.util.Locale;
 

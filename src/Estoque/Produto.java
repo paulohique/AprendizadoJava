@@ -1,4 +1,4 @@
-package BancoPOO.Estoque;
+package Estoque;
 
 public class Produto {
     public String nome;
