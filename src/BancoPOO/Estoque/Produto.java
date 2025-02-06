@@ -6,7 +6,7 @@ public class Produto {
     public int quantidade;
 
 
-    public  double totalValorStock(){
+    public  double totalValorStock(Produto produto){
         return preco*quantidade;
 
     }
