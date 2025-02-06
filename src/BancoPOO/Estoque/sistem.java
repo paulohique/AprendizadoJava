@@ -24,8 +24,8 @@ public class sistem {
         produto.removeProduto(quantidade);
         System.out.println("Quantidade atualizada: " + produto.quantidade);
         System.out.println("Gostaira de saber o total do valor em stock?");
-        double ele = produto.totalValorStock(produto);
-        System.out.println("O valor total em stock é: " + ele);
+        double estoque = produto.totalValorStock(produto);
+        System.out.println("O valor total em stock é: " + estoque);
         sc.close();
     }
 }
