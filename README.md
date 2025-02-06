@@ -29,8 +29,55 @@ Este programa permite gerar senhas seguras de forma automatizada. Você informa 
 
 ---
 
+## 3. Sistema de Gestão de Estoque
+Este projeto permite controlar o estoque de produtos, permitindo adição e remoção de quantidades e cálculo do valor total em estoque.
+
+### Funcionalidades
+- Cadastro de produtos
+- Adição e remoção de quantidades
+- Cálculo do valor total em estoque
+
+### Como usar
+1. Execute o programa.
+2. Informe o nome, preço e quantidade do produto.
+3. Escolha entre adicionar ou remover itens do estoque.
+4. Consulte o valor total do estoque.
+   
+---
+
+## 4. Sistema Bancário Simples
+Este programa simula um sistema bancário básico com contas bancárias e operações como saque e depósito.
+
+### Funcionalidades
+- Criar contas bancárias
+- Depositar valores
+- Sacar valores
+- Consultar saldo das contas
+
+### Como usar
+1. Execute o programa.
+2. Escolha criar uma conta ou acessar contas existentes.
+3. Informe os dados da conta.
+4. Realize operações como depósito e saque.
+5. Consulte os saldos das contas.
+   
+---
+
+## 5. Calculadora de Área de Triângulo
+Este programa calcula a área de dois triângulos e compara qual é maior.
+
+### Como usar
+1. Execute o programa.
+2. Insira os valores dos lados dos dois triângulos.
+3. O programa calculará e exibirá as áreas.
+4. Ele indicará qual triângulo possui a maior área.
+
 ## Tecnologias Utilizadas
-- **Java**: Linguagem de programação utilizada para implementar os projetos.
+- Linguagem: **Java**
+- IDE recomendada: **Eclipse / IntelliJ IDEA**
+- Paradigma: **Programação Orientada a Objetos (POO)**
+
+Se tiver alguma sugestão ou dúvida, sinta-se à vontade para contribuir!
 
 ---
 
