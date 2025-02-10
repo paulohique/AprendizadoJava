@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Salary {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        Salario.Empregado empregado = new Salario.Empregado();
+        Empregado empregado = new Empregado();
         double salarios,percentage;
         System.out.println("Digite o nome do empregado: ");
         empregado.nome = sc.nextLine();
