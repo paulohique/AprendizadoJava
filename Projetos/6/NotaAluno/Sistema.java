@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Sistema {
     public static void main(String[] args) {
-        Aluno aluno = new Aluno();
+        NotaAluno.Aluno aluno = new NotaAluno.Aluno();
         Scanner sc = new Scanner(System.in);
 
         System.out.println("Digite o nome do aluno: ");

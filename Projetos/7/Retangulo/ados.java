@@ -1,5 +1,4 @@
 package Retangulo;
-import java.awt.geom.Area;
 import java.util.Scanner;
 import java.util.Locale;
 public class ados {
