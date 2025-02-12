@@ -18,21 +18,21 @@ public class sistem {
         System.out.println("Digite a quantidade do produto: ");
         produto.quantidade = sc.nextInt();
 
-        System.out.println("O produto " + produto.nome + " tem " + produto.quantidade + " no valor de: " + produto.preco);
+        System.out.println("O produto " + produto.setNome + " tem " + produto.setQuantidade + " no valor de: " + produto.preco);
         System.out.println("Gostaria de alterar a quantidade do produto?");
         System.out.println("Adicione aqui a quantidade:");
         int quantidade = sc.nextInt();
 
         produto.addProduto(quantidade);
 
-        System.out.println("Quantidade atualizada: " + produto.quantidade);
+        System.out.println("Quantidade atualizada: " + produto.setQuantidade);
         System.out.println("Gostaria de remover a quantidade do produto?");
         System.out.println("Adicione aqui a quantidade:");
         quantidade = sc.nextInt();
 
         produto.removeProduto(quantidade);
 
-        System.out.println("Quantidade atualizada: " + produto.quantidade);
+        System.out.println("Quantidade atualizada: " + produto.setQuantidade);
         System.out.println("Gostaira de saber o total do valor em stock?");
 
         double estoque = produto.totalValorStock(produto);
