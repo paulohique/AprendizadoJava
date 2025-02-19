@@ -49,6 +49,9 @@ public class Conta {
         if (this.saldo >= valor) {
             this.saldo -= (valor + 5);
         }
+        else{
+            System.out.println("Saldo insuficiente");
+        }
 
     }
 

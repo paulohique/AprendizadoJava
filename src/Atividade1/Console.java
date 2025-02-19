@@ -15,7 +15,6 @@ public class Console {
         System.out.println("Nome do dono da conta:");
         sc.nextLine();
         String nome = sc.nextLine();
-
         System.out.println("Terá depósito inicial? (S/N)");
         char deposito = sc.next().charAt(0);
 
