@@ -1,7 +1,4 @@
-package Aula2POO.carro;
-
-import java.util.Date;
-import java.util.Objects;
+package carro;
 
 public class Carro {
     private int ano;

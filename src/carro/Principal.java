@@ -1,4 +1,4 @@
-package Aula2POO.carro;
+package carro;
 
 import java.util.Locale;
 import java.util.Scanner;
