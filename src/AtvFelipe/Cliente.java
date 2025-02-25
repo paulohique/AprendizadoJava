@@ -10,7 +10,7 @@ public class Cliente {
     private String email;
     private ArrayList<Carro> carros;
 
-    // Construtor atualizado
+
     public Cliente(String nome, int cpf, String endereco, int telefone, String email, ArrayList<Cliente> clientes) {
         if (verificarCPF(cpf, clientes) != 0) {
             throw new IllegalArgumentException("Erro: Este CPF já está cadastrado!");
