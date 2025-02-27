@@ -1,5 +1,12 @@
 package AtvFelipe;
 
+import java.util.ArrayList;
+import java.util.Scanner;
+
+import static AtvFelipe.Cliente.encontrarClientePorCPF;
+import static AtvFelipe.Main.clientes;
+import static AtvFelipe.Main.scanner;
+
 public class Carro {
     private String placa;
     private String modelo;
@@ -74,5 +81,28 @@ public class Carro {
     public void setValorMercado(double valorMercado) {
         this.valorMercado = valorMercado;
     }
+    public void imprimirInfo(){
+        System.out.println("Placa: " + this.placa);
+        System.out.println("Modelo: " + this.modelo);
+        System.out.println("Marca: " + this.marca);
+        System.out.println(("Ano Fabricacao: " + this.anoFabricacao));
+        System.out.println("Cor: " + this.cor);
+        System.out.println("Potencia: " + this.potencia);
+        System.out.println("Valor Mercado: " + this.valorMercado);
 
+    }
+    public static void listarCarros() {
+
+        System.out.print("Digite o CPF do cliente: ");
+        int cpf = scanner.nextInt();
+        scanner.nextLine();
+
+        Cliente cliente = encontrarClientePorCPF(cpf, clientes);
+        if (cliente == null) {
+            System.out.println("Cliente não encontrado!");
+            return;
+        }
+
+        System.out.println(cliente.listarCarros());
+    }
 }

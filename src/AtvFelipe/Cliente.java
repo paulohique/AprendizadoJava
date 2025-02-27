@@ -1,6 +1,10 @@
 package AtvFelipe;
 
 import java.util.ArrayList;
+import java.util.Scanner;
+
+import static AtvFelipe.Main.clientes;
+import static AtvFelipe.Main.scanner;
 
 public class Cliente {
     private String nome;
@@ -113,5 +117,86 @@ public class Cliente {
         return false;
     }
 
+    public static Cliente encontrarClientePorCPF(int cpf, ArrayList<Cliente> clientes) {
+        for (Cliente cliente : clientes) {
+            if (cliente.getCpf() == cpf) {
+                return cliente;
+            }
+        }
+        return null;
+    }
+    static void alterarCarro() {
+        System.out.print("Digite o CPF do cliente: ");
+        int cpf = scanner.nextInt();
+        scanner.nextLine();
 
+        Cliente cliente = encontrarClientePorCPF(cpf,clientes);
+        if (cliente == null) {
+            System.out.println("Cliente não encontrado!");
+            return;
+        }
+
+        System.out.print("Digite a placa do carro a ser alterado: ");
+        String placa = scanner.nextLine();
+
+        Carro carro = cliente.encontrarCarroPorPlaca(placa);
+        if (carro == null) {
+            System.out.println("Carro não encontrado!");
+            return;
+        }
+
+        System.out.print("Novo modelo: ");
+        carro.setModelo(scanner.nextLine());
+        System.out.print("Nova marca: ");
+        carro.setMarca(scanner.nextLine());
+        System.out.print("Novo ano de fabricação: ");
+        carro.setAnoFabricacao(scanner.nextInt());
+        scanner.nextLine();
+        System.out.print("Nova cor: ");
+        carro.setCor(scanner.nextLine());
+        System.out.print("Nova potência (cv): ");
+        carro.setPotencia(scanner.nextInt());
+        System.out.print("Novo valor de mercado: ");
+        carro.setValorMercado(scanner.nextDouble());
+
+        System.out.println("Carro atualizado com sucesso!");
+    }
+    public static void listarClientes(ArrayList<Cliente> clientes) {
+        if (clientes.isEmpty()) {
+            System.out.println("Nenhum cliente cadastrado.");
+            return;
+        }
+
+        System.out.println("\n=== Lista de Clientes ===");
+        for (Cliente cliente : clientes) {
+            System.out.println("Nome: " + cliente.getNome());
+            System.out.println("CPF: " + cliente.getCpf());
+            System.out.println("Telefone: " + cliente.getTelefone());
+            System.out.println("Email: " + cliente.getEmail());
+            System.out.println("Endereço: " + cliente.getEndereco());
+            System.out.println("--------------------------");
+        }
+    }
+
+    public static void removerCarro() {
+        System.out.print("Digite o CPF do cliente: ");
+        int cpf = scanner.nextInt();
+        scanner.nextLine();
+
+        Cliente cliente = encontrarClientePorCPF(cpf,clientes);
+        if (cliente == null) {
+            System.out.println("Cliente não encontrado!");
+            return;
+        }
+
+        System.out.print("Digite a placa do carro a ser removido: ");
+        String placa = scanner.nextLine();
+
+        boolean removido = cliente.removerCarro(placa);
+        if (removido) {
+            System.out.println("Carro removido com sucesso!");
+        } else {
+            System.out.println("Carro não encontrado!");
+        }
+    }
 }
