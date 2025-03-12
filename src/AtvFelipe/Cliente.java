@@ -1,7 +1,6 @@
 package AtvFelipe;
 
 import java.util.ArrayList;
-import java.util.Scanner;
 
 import static AtvFelipe.Main.clientes;
 import static AtvFelipe.Main.scanner;

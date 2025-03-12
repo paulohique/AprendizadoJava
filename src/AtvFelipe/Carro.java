@@ -1,8 +1,5 @@
 package AtvFelipe;
 
-import java.util.ArrayList;
-import java.util.Scanner;
-
 import static AtvFelipe.Cliente.encontrarClientePorCPF;
 import static AtvFelipe.Main.clientes;
 import static AtvFelipe.Main.scanner;

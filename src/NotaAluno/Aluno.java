@@ -24,4 +24,8 @@ public class Aluno {
         System.out.printf("Aluno reprovado! Faltam %.1f pontos para aprovação.\n", pontosFaltando);
         aproved = false;}
     }
+
+    public void tirarCopias(int i) {
+
+    }
 }
